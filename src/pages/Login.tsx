@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEnvelope, FaLock, FaShieldAlt } from "react-icons/fa";
-import Navbar from "../components/Navbar";
 import heroImage from "../assets/hero.png";
 import { loginUser } from "../redux/features/authSlice";
 import type { AppDispatch, RootState } from "../redux/store";

@@ -8,7 +8,6 @@ import {
   FaSeedling,
   FaUser,
 } from "react-icons/fa";
-import Navbar from "../components/Navbar";
 import heroImage from "../assets/hero.png";
 import { signupUser } from "../redux/features/authSlice";
 import type { AppDispatch, RootState } from "../redux/store";
