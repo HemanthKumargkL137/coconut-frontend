@@ -4,7 +4,23 @@ import authReducer from "./features/authSlice";
 import type { AuthState } from "./features/authSlice";
 import cartReducer from "./features/cartSlice";
 
-import storage from "redux-persist/lib/storage";
+const storage = {
+  getItem: (key: string) => {
+    return Promise.resolve(typeof window !== "undefined" ? localStorage.getItem(key) : null);
+  },
+  setItem: (key: string, value: string) => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem(key, value);
+    }
+    return Promise.resolve();
+  },
+  removeItem: (key: string) => {
+    if (typeof window !== "undefined") {
+      localStorage.removeItem(key);
+    }
+    return Promise.resolve();
+  },
+};
 
 import {
   persistReducer,
