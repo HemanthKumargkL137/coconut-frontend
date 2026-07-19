@@ -49,10 +49,10 @@ const Sidebar = ({ categories ,handleCategoryClick,onSortChange}: SidebarProps) 
           className="w-full accent-green-600"
         /> */}
 
-        <div className="flex justify-between text-sm text-gray-500 mt-2">
+        {/* <div className="flex justify-between text-sm text-gray-500 mt-2">
           <span>₹0</span>
           <span>₹1000</span>
-        </div>
+        </div> */}
       </div>
 
       {/* Sort */}
