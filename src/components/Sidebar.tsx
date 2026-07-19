@@ -38,7 +38,7 @@ const Sidebar = ({ categories ,handleCategoryClick,onSortChange}: SidebarProps) 
 
       {/* Price */}
       <div className="mt-8">
-        <h3 className="font-semibold mb-4">
+        {/* <h3 className="font-semibold mb-4">
           Filter by Price
         </h3>
 
@@ -47,7 +47,7 @@ const Sidebar = ({ categories ,handleCategoryClick,onSortChange}: SidebarProps) 
           min="0"
           max="1000"
           className="w-full accent-green-600"
-        />
+        /> */}
 
         <div className="flex justify-between text-sm text-gray-500 mt-2">
           <span>₹0</span>

@@ -71,10 +71,10 @@ const Blog = () => {
                   {post.description}
                 </p>
 
-                <button className="inline-flex items-center gap-2 text-green-700 font-semibold hover:text-green-900">
+                {/* <button className="inline-flex items-center gap-2 text-green-700 font-semibold hover:text-green-900">
                   Read More
                   <FaArrowRight className="text-sm" />
-                </button>
+                </button> */}
               </article>
             ))}
           </div>
