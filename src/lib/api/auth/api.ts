@@ -1,8 +1,7 @@
 // apistep3
 import apiEndpoints from "../../utils/apiEndPoints/apiEndPoints";
 import axios from "axios";
-
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+import API_BASE_URL from "../apiBaseUrl";
 
 export type SignupPayload = {
   firstName: string;
